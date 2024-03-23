@@ -55,7 +55,7 @@ const Homepage = ({ shift }) => {
       <div className="lg:hidden">
         <ul className="flex justify-around gap-0 mt-4 px-8 bg-purple-500">
          {menu.map((item)=>(
-          <li onClick={()=>handleClick(item.name)}>{item.name}</li>
+          <li onClick={()=>handleClick(item.name)} className={`${state===item.name ?'bg-purple-800 text-white w-30 px-4':''}`}>{item.name}</li>
          ))} 
         </ul>
         {state === "Discussion Fourum"
